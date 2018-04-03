@@ -9,7 +9,7 @@ exports.seed = (knex, Promise) => {
               artist: 'Soundgarden',
               genre: 'Rock',
               description: 'Wont ya come',
-              cover_url: 'soungarded.url'
+              cover_url: 'https://upload.wikimedia.org/wikipedia/en/3/3a/Superunknown.jpg'
             },
             {
               id: 2,

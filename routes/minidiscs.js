@@ -1,6 +1,10 @@
 const express = require('express')
 const router = express.Router()
 const knex = require('../knex')
+
+router.get('/new', (req, res, next) => {
+  res.render('minidiscs', {})
+})
 // READ ALL records for this table
 router.get('/', (req, res, next) => {
   knex('minidiscs')
@@ -22,7 +26,6 @@ router.get('/:id', (req, res, next) => {
       next(err)
     })
 })
-
 
 // CREATE ONE record for this table
 router.post('/', (req, res, next) => {
